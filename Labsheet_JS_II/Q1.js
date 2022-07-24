@@ -3,5 +3,6 @@ function Alert() {
     let Hometown = document.getElementById("hometown").value;
 
     if (Name != "" && Hometown != "") {
-        alert("Name: " + Name + "\nHome town: " + Hometown); }
-  }
+        alert("Name: " + Name + "\nHome town: " + Hometown);
+    }
+}
