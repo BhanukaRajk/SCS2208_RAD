@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>Question 04</title>
+    <link rel="stylesheet" href="Q10.css">
+</head>
+
+
+<body>
+    <script src="Q10.js"></script>
+    <table>
+        <tr>
+            <td colspan="4" id="display" class="black"> </td>
+        </tr>
+        <tr class="grey">
+            <td onclick="button('+')">+</td>
+            <td onclick="button('-')">-</td>
+            <td onclick="button('*')">x</td>
+            <td onclick="button('/')">/</td>
+        </tr>
+        <tr>
+            <td onclick="button('7')">7</td>
+            <td onclick="button('8')">8</td>
+            <td onclick="button('9')">9</td>
+            <td class="orange" rowspan="4" onclick="calculate()">=</td>
+        </tr>
+        <tr>
+            <td onclick="button('4')">4</td>
+            <td onclick="button('5')">5</td>
+            <td onclick="button('6')">6</td>
+        </tr>
+        <tr>
+            <td onclick="button('1')">1</td>
+            <td onclick="button('2')">2</td>
+            <td onclick="button('3')">3</td>
+        </tr>
+        <tr>
+            <td onclick="button('0')">0</td>
+            <td onclick="button('.')">.</td>
+            <td onclick="clearscreen()">AC</td>
+        </tr>
+    </table>
+</body>
+
+</html>
