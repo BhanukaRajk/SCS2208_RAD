@@ -5,21 +5,15 @@
 
 <head>
     <title>Question 02</title>
-    <link rel="stylesheet" href="Q2.css">
+    <link rel="stylesheet" href="common.css">
 </head>
 
 <body>
-    <!--<script src="Q2.js"></script>-->
+    <script src="Q2.js"></script>
 
     <div class="window">
-        <p id="demo"></p>
-        <button type="button" onclick="showtime()">Time</button>
-
-        <script>
-            function showtime() {
-                document.getElementById("demo").innerHTML = Date();
-            }
-        </script>
+        <p id="time"></p>
+        <button type="button" class="button" onclick="showtime(this)">Time</button>
 
     </div>
 </body>
