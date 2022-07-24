@@ -1,0 +1,25 @@
+table {
+    border-collapse: collapse;
+    width: 20%;
+}
+
+td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: #cccccc;
+}
+
+.button {
+    display: inline-block;
+    background-color: rgb(10, 188, 233);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 10px 40px;
+}
