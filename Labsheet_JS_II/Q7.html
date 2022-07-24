@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <title>Question 07</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+    <script src="Q7.js"></script>
+    <div class="window">
+        <form>
+            <h2>Available Hotel Packages</h2>
+
+            <input type="checkbox" id="wedding" name="wedding" class="cbox" value="1" onclick="changeothers(this)">
+            <label for="wedding"> Wedding package</label><br>
+            <input type="checkbox" id="bday" name="bday" class="cbox" value="1" onclick="changeothers(this)">
+            <label for="bday"> Birthday package</label><br>
+            <input type="checkbox" id="normal" name="normal" class="cbox" value="1" onclick="changeothers(this)">
+            <label for="normal"> Normal function package</label><br>
+            <input type="checkbox" id="dout" name="dout" class="cbox" value="1" onclick="changeothers(this)">
+            <label for="dout"> Day out package</label><br><br>
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
