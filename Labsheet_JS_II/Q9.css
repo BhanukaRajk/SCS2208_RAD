@@ -1,0 +1,24 @@
+.window {
+  display: inline-block;
+  position: fixed;
+  border: none;
+  border-radius: 5px;
+  background-color: #cacaca;
+  padding: 40px 30px;
+  font-size: 18px;
+}
+
+.button {
+  display: inline-block;
+  background-color: rgb(241, 69, 233);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  padding: 10px 100px;
+}
+
+.box {
+  padding: 10px 12px;
+}
