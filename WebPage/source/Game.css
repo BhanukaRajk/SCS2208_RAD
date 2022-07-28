@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: 'Gabriola';
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+}
+
+b {
+    font-size: 2rem;
+    color: white;
+}
+
+p {
+    font-size: 40px;
+    color: white;
+    font-family: "Indie Flower", cursive;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border-radius: 5%;
+}
+
+span {
+    color:rgb(245, 53, 53);
+}
+
+.Gamebox {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(39, 39, 39);
+    border-radius: 20px;
+}
+
+.scoreboard {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.player_2,
+.player_1 {
+    border-radius: 15px;
+    border: 5px solid;
+    background-color: rgb(39, 20, 7);
+}
+
+.Diceboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.playbutton-1,
+.playbutton-2 {
+    margin: 10px 100px;
+}
+
+.roll {
+    background: #ffe600;
+    border-radius: 10px;
+    width: 208px;
+    height: 50px;
+    font-family: 'Helvetica';
+    font-size: 28px;
+    color: black;
+    text-decoration: none;
+}
+
+.roll:hover {
+    background: #ffec46ad;
+    text-decoration: none;
+}

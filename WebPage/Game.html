@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nice Dice</title>
+    <link rel="shortcut icon" href="dicon.ico" />
+
+    <link rel="stylesheet" href="source/Game.css">
+    <script src="source/Game.js"></script>
+</head>
+
+<body onload="setname()">
+
+    <div class="Gamebox">
+        <h1 id="indicator">Let's Play</h1>
+        <div class="scoreboard">
+
+            <div class="player_1">
+                <div>
+                    <h1 id="N1">Player  1</h1>
+                </div>
+                <img src="images/dp/dp1.jpg" alt="Player-1">
+                <div class="Score-1">
+                    <p>Score: <samp id="PS-1">0</samp></p>
+                </div>
+                <div class="playbutton-1">
+                    <button type="button" class="roll" id="P1" onClick="buttonclick(this)">
+                        Roll
+                    </button>
+                </div>
+            </div>
+
+            <div class="Diceboard">
+                <figure>
+                    <img class="dice1" src="images/dice/emptydice.png" alt="Dice-1">
+                    <figcaption><b>Dice 1</b></figcaption>
+                </figure>
+
+                <figure>
+                    <img class="dice2" src="images/dice/emptydice.png" alt="Dice-2">
+                    <figcaption><b>Dice 2</b></figcaption>
+                </figure>
+            </div>
+
+            <div class="player_2">
+                <div>
+                    <h1 id="N2">Player  2</h1>
+                </div>
+                <img src="images/dp/dp2.jpg" alt="Player-2">
+                <div class="Score-2">
+                    <p>Score: <samp id="PS-2">0</samp></p>
+                </div>
+                <div class="playbutton-2">
+                    <button type="button" class="roll" id="P2" onClick="buttonclick(this)">
+                        Roll
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<!--
+    Image sources(Authors):
+        emptydice.png ==> https://static.thenounproject.com/png/1216353-200.png
+
+        dp1.jpg ==> https://www.vecteezy.com/?utm_source=vecteezy-download&utm_medium=license-info-pdf&utm_campaign=license-info-document
+        dp2.jpg ==> https://www.vecteezy.com/?utm_source=vecteezy-download&utm_medium=license-info-pdf&utm_campaign=license-info-document
+            FROM www.vecteezy.com
+
+        cup.jpg ==> http://clipart-library.com/data_images/39402.jpg
+
+        dicon.ico ==> FROM icons8 app
+-->
