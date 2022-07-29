@@ -41,10 +41,16 @@ function buttonclick(playerID) {
     document.querySelector(".dice2").setAttribute("src", "images/dice/dice_" + score_2 + ".png");
 
     if (score_1 == score_2 && score_1 != 1) {
-        TEMP = TEMP + score_1 + score_2;
+        
+        if((TEMP+score_1+score_2)>100) {
+            document.getElementById("indicator").innerHTML = "<span>Sorry! </span>" + document.getElementById("N" + x).innerHTML + ". You cannot exceed 100";
+        }
+        else {
+            TEMP = TEMP + score_1 + score_2;
 
-        document.getElementById("indicator").innerHTML = document.getElementById("N" + x).innerHTML +
-            " collected <span>Bonus chance</span> and " + (score_1 + score_2) + " points!";
+            document.getElementById("indicator").innerHTML = document.getElementById("N" + x).innerHTML +
+                " collected <span>Bonus chance</span> and " + (score_1 + score_2) + " points!";
+        }
 
     }
 
@@ -59,11 +65,16 @@ function buttonclick(playerID) {
     }
 
     else {
-        TEMP = TEMP + score_1 + score_2;
+        if((TEMP+score_1+score_2)>100) {
+            document.getElementById("indicator").innerHTML = "<span>Sorry! </span>" + document.getElementById("N" + x).innerHTML + ". You cannot exceed 100";
+        }
+    
+        else {
+            TEMP = TEMP + score_1 + score_2;
 
-        document.getElementById("indicator").innerHTML = document.getElementById("N" + x).innerHTML +
-            " collected " + (score_1 + score_2) + " points!";
-
+            document.getElementById("indicator").innerHTML = document.getElementById("N" + x).innerHTML +
+                " collected " + (score_1 + score_2) + " points!";
+        }
         buttonlock(y, x);
 
     }
@@ -71,7 +82,7 @@ function buttonclick(playerID) {
 
     document.getElementById("PS-" + x).innerHTML = TEMP;
 
-    if (TEMP >= 100) {
+    if (TEMP == 100) {
         gameover();
     }
 
